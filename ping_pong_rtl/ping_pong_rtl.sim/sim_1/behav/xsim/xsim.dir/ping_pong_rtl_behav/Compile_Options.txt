@@ -1,0 +1,1 @@
+-wto "bd95095aeb2046d7ac64a90e0741292a" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "ping_pong_rtl_behav" "xil_defaultlib.ping_pong_rtl" -log "elaborate.log" 
