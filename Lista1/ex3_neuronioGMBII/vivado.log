@@ -1,0 +1,329 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Tue May 14 23:28:29 2019
+# Process ID: 26924
+# Current directory: C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23972 C:\Users\Misael\Desktop\UNB\7 SEMESTRE\PROJETO DE CIRCUITOS RECONFIGURAVEIS\Lista1\ex3_neuronioGMBII\ex3_neuronioGMBII.xpr
+# Log file: C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/vivado.log
+# Journal file: C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:27 . Memory (MB): peak = 755.258 ; gain = 97.656
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Tue May 14 23:33:18 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.runs/synth_1/runme.log
+set_property top neuronio [current_fileset]
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: neuronio
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 797.777 ; gain = 42.520
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'neuronio' [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/sources_1/imports/simauto/neuronio.vhd:38]
+INFO: [Synth 8-3491] module 'multiplierfsm_v2' declared at 'C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/sources_1/imports/simauto/multiplierfsm_v2.vhd:26' bound to instance 'mul_0' of component 'multiplierfsm_v2' [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/sources_1/imports/simauto/neuronio.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'multiplierfsm_v2' [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/sources_1/imports/simauto/multiplierfsm_v2.vhd:36]
+WARNING: [Synth 8-614] signal 's_mul_man' is read in the process but is not in the sensitivity list [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/sources_1/imports/simauto/multiplierfsm_v2.vhd:64]
+WARNING: [Synth 8-614] signal 's_add_exp' is read in the process but is not in the sensitivity list [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/sources_1/imports/simauto/multiplierfsm_v2.vhd:64]
+WARNING: [Synth 8-6014] Unused sequential element s_exponen_reg was removed.  [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/sources_1/imports/simauto/multiplierfsm_v2.vhd:72]
+WARNING: [Synth 8-6014] Unused sequential element s_mantisa_reg was removed.  [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/sources_1/imports/simauto/multiplierfsm_v2.vhd:73]
+WARNING: [Synth 8-6014] Unused sequential element v_add_exp_reg was removed.  [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/sources_1/imports/simauto/multiplierfsm_v2.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'multiplierfsm_v2' (1#1) [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/sources_1/imports/simauto/multiplierfsm_v2.vhd:36]
+INFO: [Synth 8-3491] module 'multiplierfsm_v2' declared at 'C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/sources_1/imports/simauto/multiplierfsm_v2.vhd:26' bound to instance 'mul_1' of component 'multiplierfsm_v2' [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/sources_1/imports/simauto/neuronio.vhd:72]
+INFO: [Synth 8-3491] module 'multiplierfsm_v2' declared at 'C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/sources_1/imports/simauto/multiplierfsm_v2.vhd:26' bound to instance 'mul_2' of component 'multiplierfsm_v2' [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/sources_1/imports/simauto/neuronio.vhd:82]
+INFO: [Synth 8-3491] module 'addsubfsm_v6' declared at 'C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/sources_1/imports/simauto/addsubfsm_v6.vhd:17' bound to instance 'add0' of component 'addsubfsm_v6' [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/sources_1/imports/simauto/neuronio.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'addsubfsm_v6' [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/sources_1/imports/simauto/addsubfsm_v6.vhd:28]
+WARNING: [Synth 8-6014] Unused sequential element sl_reg was removed.  [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/sources_1/imports/simauto/addsubfsm_v6.vhd:118]
+WARNING: [Synth 8-6014] Unused sequential element sub_exp_reg was removed.  [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/sources_1/imports/simauto/addsubfsm_v6.vhd:148]
+WARNING: [Synth 8-6014] Unused sequential element sign_reg was removed.  [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/sources_1/imports/simauto/addsubfsm_v6.vhd:200]
+WARNING: [Synth 8-6014] Unused sequential element s_res_exp_reg was removed.  [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/sources_1/imports/simauto/addsubfsm_v6.vhd:201]
+WARNING: [Synth 8-6014] Unused sequential element out_man_reg was removed.  [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/sources_1/imports/simauto/addsubfsm_v6.vhd:202]
+WARNING: [Synth 8-6014] Unused sequential element pos_reg was removed.  [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/sources_1/imports/simauto/addsubfsm_v6.vhd:226]
+INFO: [Synth 8-256] done synthesizing module 'addsubfsm_v6' (2#1) [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/sources_1/imports/simauto/addsubfsm_v6.vhd:28]
+INFO: [Synth 8-3491] module 'addsubfsm_v6' declared at 'C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/sources_1/imports/simauto/addsubfsm_v6.vhd:17' bound to instance 'add1' of component 'addsubfsm_v6' [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/sources_1/imports/simauto/neuronio.vhd:103]
+INFO: [Synth 8-256] done synthesizing module 'neuronio' (3#1) [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/sources_1/imports/simauto/neuronio.vhd:38]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 833.848 ; gain = 78.590
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 833.848 ; gain = 78.590
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnU'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:113]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:113]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnU'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:114]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:114]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'load'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:117]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:117]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'load'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:118]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:118]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnD'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:119]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:119]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnD'. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:120]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc:120]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/constrs_1/imports/ping_pong/basys3.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:33 ; elapsed = 00:00:29 . Memory (MB): peak = 1125.332 ; gain = 370.074
+15 Infos, 81 Warnings, 70 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:29 . Memory (MB): peak = 1125.332 ; gain = 370.074
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Tue May 14 23:39:27 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Tue May 14 23:42:55 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.runs/impl_1/runme.log
+close_design
+set_property top ex3_neuronioGMBII [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Tue May 14 23:45:06 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Tue May 14 23:46:40 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.runs/impl_1/runme.log
+import_files -norecurse {{C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Experimentos/neuronio/neuronio.srcs/sources_1/imports/operadorFloatingPoint/entities.vhd} {C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Experimentos/neuronio/neuronio.srcs/sources_1/imports/operadorFloatingPoint/fpupack.vhd}}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Tue May 14 23:51:56 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.runs/synth_1/runme.log
+remove_files  {{C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/sources_1/imports/operadorFloatingPoint/entities.vhd}}
+remove_files  {{C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/sources_1/imports/simauto/fpupack.vhd}}
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Tue May 14 23:53:04 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.runs/synth_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May 14 23:54:34 2019...

@@ -1,0 +1,51 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Tue May 14 23:28:29 2019
+# Process ID: 26924
+# Current directory: C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23972 C:\Users\Misael\Desktop\UNB\7 SEMESTRE\PROJETO DE CIRCUITOS RECONFIGURAVEIS\Lista1\ex3_neuronioGMBII\ex3_neuronioGMBII.xpr
+# Log file: C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/vivado.log
+# Journal file: C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.xpr}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top neuronio [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+close_design
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top ex3_neuronioGMBII [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+import_files -norecurse {{C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Experimentos/neuronio/neuronio.srcs/sources_1/imports/operadorFloatingPoint/entities.vhd} {C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Experimentos/neuronio/neuronio.srcs/sources_1/imports/operadorFloatingPoint/fpupack.vhd}}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+remove_files  {{C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/sources_1/imports/operadorFloatingPoint/entities.vhd}}
+remove_files  {{C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.srcs/sources_1/imports/simauto/fpupack.vhd}}
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1

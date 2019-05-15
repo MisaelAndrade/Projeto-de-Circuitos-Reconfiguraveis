@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Tue May 14 23:53:07 2019
+# Process ID: 24468
+# Current directory: C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.runs/synth_1
+# Command line: vivado.exe -log ex3_neuronioGMBII.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ex3_neuronioGMBII.tcl
+# Log file: C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.runs/synth_1/ex3_neuronioGMBII.vds
+# Journal file: C:/Users/Misael/Desktop/UNB/7 SEMESTRE/PROJETO DE CIRCUITOS RECONFIGURAVEIS/Lista1/ex3_neuronioGMBII/ex3_neuronioGMBII.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source ex3_neuronioGMBII.tcl -notrace
